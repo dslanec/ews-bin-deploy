@@ -84,7 +84,7 @@ unzip newrelic.zip -d /opt/webserver && cd /opt/webserver/newrelic
 #modify config file with license key
 echo "Updating New Relic configuration file..."
 sed -ie 's/<%= license_key %>/LICENSE_KEY/g' newrelic.yml
-sed -ie 's/My Application/Pet Store/g' newrelic.yml
+sed -ie 's/My Application/APPLICATION_NAME/g' newrelic.yml
 
 # Adding JVM Argument for New Relic agent
 echo "Adding JVM Argument for New Relic agent..."
